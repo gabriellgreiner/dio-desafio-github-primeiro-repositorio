@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+
+* {
+ font-family: Roboto;
+}
+
+.exemplo {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  border: 30px solid;
+}
+
+#exemplo-1{
+border-image-source: url("../html-css/border.html");
+border-image-repeat: repeat;
+border-image-slice: 170;
+}
+
+#exemplo-2 {
+  border-image-source: linear-gradient(red, black);
+  border-image-slice: 10;
+}
