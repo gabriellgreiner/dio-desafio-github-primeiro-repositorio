@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Trilha de css</title>
+  <style>
+    .exemplo {
+        width: 200px;
+        background-color: chartreuse;
+    }
+
+    #span {
+background-color: seagreen;
+color: white;
+ }
+
+ #nowrap {
+white-space: nowrap;
+ }
+
+ #pre {
+white-space: pre;
+ }
+
+ #pre-line {
+white-space: pre-line;
+ }
+
+ #pre-wrap {
+white-space: pre-wrap;
+ }
+
+ #break-spaces {
+white-space: break-spaces;
+}
+
+ </style>
+</head>
+
+<body>
+    <h2>propriedade <code>white-space</code></h2>
+<p>Define como os espaços em branco do texto de um determinado elemento é tratado</p>
+
+<i>Exemplos:</i> <br><br>
+
+<code>white-space: normal;</code>
+<p class="exemplo">
+    <span>
+        Sequences of white space are collapsed. Newline characters in the source are handled the same as other white space. Lines are broken as necessary to fill line boxes.
+    </span>
+</p>
+
+<code>white-space: nowrap;</code>
+<p id="nowrap" class="exemplo">
+    <span>
+        white space as for normal, but suppresses line breaks (text wrapping) within the source.
+    </span>
+</p>
+
+<code>white-space: pre;</code>
+<p id="pre" class="exemplo">
+    <span>
+        Sequences of white space are preserved. Lines are only broken at newline characters in the source and at <br> elements.
+    </span>
+</p>
+
+<code>white-space pre-line;</code>
+<p id="pre-line" class="exemplo">
+    <span>
+        Sequences of white space are collapsed. Lines are broken at newline characters, at <br>, and as necessary to fill line boxes.
+    </span>
+</p>
+
+<code>white-space: pre-wrap;</code>
+<p id="pre-wrap" class="exemplo">
+    <span>
+        Sequences of white space are preserved. Lines are broken at newline characters, at <br>, and as necessary to fill line boxes.
+    </span>
+</p>
+
+<code>white-space: break-spaces;</code>
+<p id="break-spaces" class="exemplo">
+    <span>
+        The behavior is identical to that of pre-wrap, except that:
+
+Any sequence of preserved white space always takes up space, including at the end of the line.
+A line-breaking opportunity exists after every preserved white space character, including between white space characters.
+Such preserved spaces take up space and do not hang, thus affecting the box's intrinsic sizes (min-content size and max-content size).
+    </span>
+</p>
+</body>
+</html>
