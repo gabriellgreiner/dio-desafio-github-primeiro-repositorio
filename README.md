@@ -8,3 +8,4 @@ Sequência para enviar no git
 2-git add . (se caso quiser adcionar tudo)
 3-git commit (nome) 
 4-push
+
