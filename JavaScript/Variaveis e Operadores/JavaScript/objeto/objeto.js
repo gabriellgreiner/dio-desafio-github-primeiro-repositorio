@@ -2,29 +2,22 @@
 class pessoa {
     nome;
     idade;
+    anoDeNascimento;
 
-    descrever() {
-        console.log('Meu nome é ${Gabriel L Greiner} e minha idaade é ${18}');
-        console.log('Meu nome é ${Davi L Greiner} e minha idaade é ${4}');
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+        this.anoDeNascimento = 2005 - idade;
+    }
+
+descrever() {
+    console.log('Meu nome é ${this.nome} e minha idade ${this.idade}');
     }
 }
+    
+const Gabriel = new pessoa('Gabriel', 18);
 
-const Gabriel = new pessoa();
-Gabriel.nome = 'Gabriel L Greiner';
-Gabriel.idade = 18;
-
-const Davi = new pessoa();
-Davi.nome = 'Davi L Greiner';
-Davi.idade = 4;
-
-
-
-Gabriel.descrever();
-Davi.descrever();
-
-
-
-
+console.log(Gabriel);
 
 
 
