@@ -9,28 +9,15 @@ class pessoa {
         this.idade = idade;
         this.anoDeNascimento = 2005 - idade;
     }
-
-descrever() {
-    console.log('Meu nome é ${this.nome} e minha idade ${this.idade}');
+    
+    descrever() {
+        console.log('Meu nome é $(this.nome) e minha idade é &(this.idade)');
     }
 }
-    
-const Gabriel = new pessoa('Gabriel', 18);
 
-console.log(Gabriel);
+const gabriel = new pessoa('gabriel', 18);
 
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(gabriel);
 
 
 
